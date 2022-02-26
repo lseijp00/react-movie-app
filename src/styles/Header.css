@@ -1,0 +1,9 @@
+.Header{
+  margin: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  color: white;
+  background-color: rgb(228, 101, 101);
+  border-radius: 20px;
+  align-self: start;
+}

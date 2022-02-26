@@ -1,0 +1,31 @@
+.Poster{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 5rem 25rem;
+  grid-gap: 2rem;
+}
+
+.Caratula{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 5rem 25rem;
+  grid-gap: 2rem;
+}
+
+button{
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  background-color: none;
+  background: none;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(76, 98, 245);
+  color: white;
+}

@@ -1,0 +1,64 @@
+.Pelicula {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 16px;
+  color: black;
+  position: relative;
+  box-shadow: 2px 2px 1rem 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Movie--details{
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: all .2s ease-in-out;
+}
+
+
+.Pelicula:hover .Movie--details {  
+  bottom: 0;
+}
+.Pelicula:hover img {  
+  filter: brightness(60%);
+
+}
+.Pelicula:hover::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.Pelicula h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
+.Pelicula p {
+
+  margin: 0;
+  font-weight: 700;
+
+}
+.Pelicula img {
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
