@@ -1,13 +1,5 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "baseUrl": "./",
-    "checkJs": true,
-    "jsx": "react-jsx",
-    "module": "es6",
-    "paths": {
-      "features/*": ["src/client/features/*"],
-      "components/*": ["src/client/components/*"]
-    }
-  },
+    "baseUrl": "src"
+  }
 }

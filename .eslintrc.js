@@ -18,10 +18,18 @@ module.exports = {
   plugins: [
     'react'
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.d.ts', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', 'src'],
+      },
+    },
+  },
   rules: {
     'react/react-in-jsx-scope': 'off',
     'space-before-function-paren': ['off', 'never'],
     "react/prop-types": "off",
-    "ignoreDestructuring": true
+    "ignoreDestructuring": "off"
   }
 }

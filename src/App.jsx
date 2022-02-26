@@ -1,20 +1,21 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import { Link, Route } from 'wouter'
+import './styles/ListOfMovies.css'
 import { Header } from './components/Header'
 import ListOfMovies from './components/ListOfMovies'
-import './styles/ListOfMovies.css'
-import './styles/Header.css'
 
 const App = () => {
   
-  const [keyword, setKeyword ] = useState('poster')
-  const [style, setStyle] = useState("Poster");
   return (
     <div className="App">
       <Header/>
-      <section className={style}>
-        <button onClick={() => setKeyword('poster') }>BACKGROUND</button>
-        <button onClick={() => setKeyword('caratula')}>CARATULA</button>
-        <ListOfMovies keyword={keyword}/>
+      <section className='Peliculas'>
+        <Link className="boton" to="/movies/posters">VER POSTERS</Link>
+        <Link className="boton" to="/movies/caratulas">VER CARATULAS</Link>
+
+        <Route 
+          path="/movies/:keyword" 
+          component={ListOfMovies}/>
       </section>
     </div>
   )

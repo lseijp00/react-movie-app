@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import getMovies from '../services/tmdb'
 import { Movie } from './Movie'
 
-export default function ListOfMovies({keyword}) {
-
+export default function ListOfMovies({params}) {
+  
+  const  { keyword }  = params
+  
   const [movies, setMovies] = useState([])
  
   useEffect(function() {
