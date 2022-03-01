@@ -1,22 +1,20 @@
-import { useState } from 'react'
-import { Link, Route } from 'wouter'
-import './styles/ListOfMovies.css'
 import { Header } from './components/Header'
-import ListOfMovies from './components/ListOfMovies'
+import './styles/ListOfMovies.css'
+import FiltradoBotones from './components/FiltradoBotones';
+import ListOfMovies from './components/ListOfMovies';
+import { Route } from 'wouter';
+import Detail from './pages/Detail'
 
 const App = () => {
-  
   return (
     <div className="App">
-      <Header/>
-      <section className='Peliculas'>
-        <Link className="boton" to="/movies/posters">VER POSTERS</Link>
-        <Link className="boton" to="/movies/caratulas">VER CARATULAS</Link>
-
-        <Route 
-          path="/movies/:keyword" 
-          component={ListOfMovies}/>
+      <section>
+        <Header/>
       </section>
+      
+      <Route path='/movies' component={FiltradoBotones}/> 
+      <Route path="/movies/:keyword" component={ListOfMovies}/>
+      <Route path='/movie/:id' component={Detail} />
     </div>
   )
 }

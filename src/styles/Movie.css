@@ -1,16 +1,23 @@
 .Pelicula {  
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin: 16px;
+  margin: 0 auto;
+  min-height: 350px;
+  max-width: 250px;
   color: black;
   position: relative;
   box-shadow: 2px 2px 1rem 5px;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
+}
+.Pelicula.PeliculaDetailed{
+  min-height: 350px;
+  max-width: 250px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  box-shadow: none;
 }
 
 .Movie--details{
@@ -29,7 +36,9 @@
   transition: all .2s ease-in-out;
 }
 
-
+.Movie--details .PeliculaDetailed{
+  
+}
 .Pelicula:hover .Movie--details {  
   bottom: 0;
 }

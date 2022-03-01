@@ -1,10 +1,9 @@
 const apiKey = '0125ef3107968fbaa3a245c33067ae36'
 const page = 1
 const language = 'es'
-const apiURL = 'https://api.themoviedb.org/3/movie/popular'
 
-export default async function getMovies({ keyword }) {
-
+export default async function getPopularMovies({ keyword }) {
+  const apiURL = 'https://api.themoviedb.org/3/movie/popular'
 
   const url = `${apiURL}?api_key=${apiKey}&language=${language}&page=${page}`
 

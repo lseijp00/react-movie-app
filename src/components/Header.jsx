@@ -1,9 +1,23 @@
 import '../styles/Header.css'
+import { Link } from 'wouter'
+import logo from '../assets/logo.svg'
 
-export const Header = (props) => {
+export const Header = () => {
   return (
-    <div className="Header">
-      <h1>Bienvenidos a mi página web de películas</h1>
+    <div className='Header'>
+      <img className='logoHero' src={logo} alt="asdsa" />
+
+      <nav className='nav-menu'>
+        <li className='nav-item'>
+          <Link to="/" className='link'>Inicio</Link>
+        </li>
+        <li className='nav-item'>
+          <Link to="/movies" className='link'>Populares</Link>
+        </li>
+        <li className='nav-item'>
+          <Link to="/" className='link'>Inicio</Link>
+        </li>
+      </nav>
     </div>
   )
 }

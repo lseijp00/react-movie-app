@@ -1,25 +1,38 @@
+.FilterButtons{
+  display: flex;
+  width: 50%;
+  gap: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .Peliculas{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin: 5rem 25rem;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+  width: 80%;
   grid-gap: 2rem;
 }
 
 .boton{
   padding: 1rem;
-  width: 50%;
+  width: 20%;
   margin: 0 auto;
   background-color: none;
   background: none;
   border: 1px solid grey;
   border-radius: 4px;
   font-size: 20px;
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
 .boton:hover{
-  background-color: rgb(76, 98, 245);
+  background-color: #4CA4F5;
   color: white;
+  border-color: #4CA4F5;;
 }

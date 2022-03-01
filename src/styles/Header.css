@@ -1,9 +1,58 @@
-.Header{
-  margin: 2rem;
-  padding: 1rem;
-  display: inline-block;
-  color: white;
-  background-color: rgb(228, 101, 101);
-  border-radius: 20px;
-  align-self: start;
+
+.Header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px rgba(128, 128, 128, 0.39) solid;
+}
+
+.nav-menu {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+
+}
+
+
+.logoHero{
+  max-width: 120px;
+  padding: .5rem ;
+  padding-left: 3rem;
+
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 0.548);
+
+}
+.link::after{
+  content: '';
+  position: absolute;
+  transform: scaleX(0);
+  height: 3px;
+  left: 0px;
+  right: 0px;
+  bottom: -5px;
+  transition: all .2s ease;
+
+}
+.link:hover{
+  color: #4CA4F5;
+
+}
+.link:hover::after {
+  background-color: #4CA4F5;
+  transform: scaleX(1);
 }
