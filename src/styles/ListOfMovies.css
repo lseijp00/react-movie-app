@@ -1,23 +1,38 @@
+.ListOfMovies{
+  margin-top: 10rem;
+  display: flex;
+}
+
 .FilterButtons{
   display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  height: max-content;
   width: 50%;
-  gap: 4rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.Peliculas{
+.Peliculas {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0 auto;
-  width: 80%;
-  grid-gap: 2rem;
+  margin-left: auto;
+  margin-right: 4rem;
+  width: 70%;
+  
+}
+.Peliculas.Posters {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+}
+.Peliculas.Caratula {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
 }
 
 .boton{
+  display: inline-block;  
   padding: 1rem;
   width: 20%;
   margin: 0 auto;

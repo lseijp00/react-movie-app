@@ -2,7 +2,9 @@
 .Header {
   display: flex;
   width: 100%;
-  border-bottom: 1px rgba(128, 128, 128, 0.39) solid;
+  background-color: transparent;
+  position: relative;
+  z-index: 99;
 }
 
 .nav-menu {
@@ -34,8 +36,9 @@
 .link {
   text-decoration: none;
   font-size: 27px;
-  color: rgba(255, 255, 255, 0.548);
-
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .link::after{
   content: '';

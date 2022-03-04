@@ -1,34 +1,60 @@
-.Detail{
-  display: flex;
-  justify-content: center;
+.Background{  
   min-height: 100vh;
+  min-width: 100vw;
   background-position: center center;
-  background-size: 100%;
-  background-repeat: none;
-  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -9;
+  inset: 0;
+  filter: grayscale(100%);
+
 }
-.Detail::after{
+.Background::after{
   content: '';
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.664);
+  background:linear-gradient(
+    to bottom,rgba(0, 0, 0, 0.555) 0%,rgba(0, 0, 0, 0.699) 40%,black 100%);
 }
 
-.PeliculaDetailed{
-  z-index: 99;
+.section-movie{
+  margin-top: 6rem;
+
 }
 
 .details--right{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
-  margin-right: 4rem;
+  margin-right: 5rem;
   color: white;
-  z-index: 99;
   align-self: center;
   justify-content: end;
   text-align: right;
+  font-family:'Montserrat';
+}
+
+.movie-title{
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.movie-average{
+  width: max-content;
+  margin-left: auto;
+  padding: 1rem;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(240, 93, 93);
+  border-radius: 10px;
+}
+
+.movie-sinopsis{
+  font-size: 16px;
+  font-weight: 400;
 }

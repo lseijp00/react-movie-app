@@ -1,9 +1,7 @@
-.Pelicula {  
+.Pelicula {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  min-height: 350px;
-  max-width: 250px;
   color: black;
   position: relative;
   box-shadow: 2px 2px 1rem 5px;
@@ -11,16 +9,26 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.Pelicula.PeliculaDetailed{
+.Pelicula.Caratula{
+  min-height: 350px;
+  max-width: 250px;
+}
+.Pelicula.Poster{
+ min-height: 250px;
+  max-width: 550px;
+}
+
+.Pelicula.PeliculaDetailed {
   min-height: 350px;
   max-width: 250px;
   position: absolute;
   top: 20%;
   left: 10%;
-  box-shadow: none;
+  box-shadow: 5px 5px 2rem 10px rgba(255, 255, 255, 0.288);
+  pointer-events: none;
 }
 
-.Movie--details{
+.Movie--details {
   position: absolute;
   bottom: -200px;
   left: 0;
@@ -36,17 +44,17 @@
   transition: all .2s ease-in-out;
 }
 
-.Movie--details .PeliculaDetailed{
-  
-}
-.Pelicula:hover .Movie--details {  
+.Pelicula:hover .Movie--details {
   bottom: 0;
 }
-.Pelicula:hover img {  
+
+
+.Pelicula:hover img {
   filter: brightness(60%);
 
 }
-.Pelicula:hover::after{
+
+.Pelicula:hover::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -66,8 +74,10 @@
   font-weight: 700;
 
 }
+
 .Pelicula img {
   max-width: 100%;
   object-fit: cover;
   aspect-ratio: 16/9;
 }
+

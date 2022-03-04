@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import getMovie from '../services/getMovie'
-import { MovieDetailed } from './../components/MovieDetailed';
+import { Movie } from './../components/Movie';
 import './Detail.css'
+import '../styles/Movie.css'
 
 export default function Detail({params}) {
 
@@ -11,22 +12,28 @@ export default function Detail({params}) {
   useEffect(function() {
     getMovie({id}).then(movie => setMovie(movie))
   }, [id])
-
+  
+  const styles = {
+    backgroundImage: `url(${movie.backdrop_path})`,
+  }
   return (
     <>
-      <section className='Detail' style={{ backgroundImage: `url(${movie.backdrop_path})` }}>
-        <div className='details--right'>
-          <h1>{movie.original_title}</h1>
-          <h1>{movie.vote_average}</h1>
-          <h2>{movie.overview}</h2>
-        </div>
+      <section className='Background' style={styles}>
+      </section>
+      <section className='section-movie'>
         {
-          <MovieDetailed
+          <Movie
             key={movie.id} 
-            poster_path={movie.poster_path} 
-            original_title={movie.original_title} 
-            vote_average={movie.vote_average}/>
+            title={movie.original_title} 
+            url={movie.backdrop_path} 
+            detailed={true}
+          />
         }
+        <div className='details--right'>
+          <h1 className='movie-title'>{movie.original_title}</h1>
+          <p className='movie-average'>{movie.vote_average}</p>
+          <h2 className='movie-sinopsis'>{movie.overview}</h2>
+        </div>
       </section>
       
     </>
