@@ -1,7 +1,11 @@
+
 import { Header } from './components/Header'
-import './styles/ListOfMovies.css'
 import FiltradoBotones from './components/FiltradoBotones';
 import ListOfMovies from './components/ListOfMovies';
+import {Title} from './components/Title'
+
+import './styles/ListOfMovies.css'
+
 import { Route } from 'wouter';
 import Detail from './pages/Detail'
 
@@ -11,7 +15,9 @@ const App = () => {
       <section>
         <Header/>
       </section>
-      
+      <section>
+        <Route exact path="/" component={Title} />
+      </section>
       <Route path='/movies' component={FiltradoBotones}/> 
       <Route path="/movies/:keyword" component={ListOfMovies}/>
       <Route path='/movie/:id' component={Detail} />

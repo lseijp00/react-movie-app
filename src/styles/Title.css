@@ -1,0 +1,22 @@
+.Title, .Subtitle{
+  color: white;
+  font-family: 'Montserrat';
+  text-align-last: left; 
+  line-height: 1;
+  width: max-content;
+}
+
+.Title{
+  margin-top: 10rem;
+  font-size: 4rem;
+  padding: 1rem 2rem 1rem 5rem;
+  background-color: #3e87ca;
+}
+.Subtitle{
+  color: white;
+  font-size: 2rem;
+  margin-left: 5rem;
+  font-family: 'Montserrat';
+  text-align-last: left; 
+  font-weight: 500;
+}

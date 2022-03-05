@@ -15,7 +15,7 @@ export const Header = () => {
           <Link to="/movies/posters" className='link'>Populares</Link>
         </li>
         <li className='nav-item'>
-          <Link to="/" className='link'>Inicio</Link>
+          <Link to="/" className='link'>Quiénes somos</Link>
         </li>
       </nav>
     </div>
