@@ -5,6 +5,7 @@ import { Movie } from './Movie'
 import { Spinner } from './Spinner'
 
 export default function ListOfMovies({params}) {
+
   var  { keyword }  = params
   const [movies, setMovies] = useState([])
   const [loading, setLoading] = useState(false)
@@ -14,12 +15,13 @@ export default function ListOfMovies({params}) {
     getPopularMovies({keyword})
     .then(movies => {
       setMovies(movies)
+      console.log(movies)
       setLoading(false)
     })
   }, [keyword])
 
 
-  const className = (keyword==='posters') ? 'Posters' : 'Caratula'
+  const category = (keyword==='posters') ? 'Posters' : 'Caratula'
 
   if(loading) return <Spinner />
 
@@ -27,24 +29,23 @@ export default function ListOfMovies({params}) {
     <div className='ListOfMovies'>
       <FiltradoBotones />
       
-      <div className={`Peliculas ${className}`}>
-        { loading ? ( 
-          <Spinner></Spinner>
+      <div className={`Peliculas ${category}`}>
+        {loading 
+        ? 
+        (
+          <Spinner/>
         )
         :
         (
-
-        movies.map(singleMovie =>            
-          <Movie 
-            key={singleMovie.id} 
-            title={singleMovie.original_title} 
-            url={singleMovie.url} 
-            id={singleMovie.id}
-            tipo={className}
+          movies.map(singleMovie =>            
+            <Movie 
+              key={singleMovie.id} 
+              title={singleMovie.original_title} 
+              url={singleMovie.url} 
+              id={singleMovie.id}
+              tipo={category}
             />
-            
           )
-        
         )
       }
       </div>

@@ -3,7 +3,7 @@ const page = 1
 const language = 'es'
 
 export default async function getMovie({ id }) {
-  console.log({ id })
+
   const apiURL = 'https://api.themoviedb.org/3/movie/'
 
   const url = `${apiURL}/${id}?api_key=${apiKey}&language=${language}`

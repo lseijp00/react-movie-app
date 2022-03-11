@@ -3,10 +3,9 @@ import { Link } from 'wouter'
 import '../styles/Movie.css'
 
 export const Movie = ({ title, id, url, detailed, tipo}) => {
-
-  console.log(tipo)
+  
   const className= detailed ? 'Pelicula PeliculaDetailed' : 'Pelicula'
-
+  console.log(url)
   return (
     
     <Link to={`/movie/${id}`}>

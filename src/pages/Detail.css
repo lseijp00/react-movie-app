@@ -7,7 +7,6 @@
   position: absolute;
   z-index: -9;
   inset: 0;
-  filter: grayscale(100%);
 
 }
 .Background::after{
@@ -16,42 +15,55 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background:linear-gradient(
-    to bottom,rgba(0, 0, 0, 0.555) 0%,rgba(0, 0, 0, 0.699) 40%,black 100%);
+  background: radial-gradient(farthest-side at 90% 5%, transparent 0%, rgba(6, 6, 19, 0) 10%, #060613 90%);
 }
 
 .section-movie{
-  margin-top: 6rem;
-
-}
-
-.details--right{
   display: flex;
   flex-direction: column;
-  width: 40%;
-  margin-left: auto;
-  margin-right: 5rem;
-  color: white;
-  align-self: center;
-  justify-content: end;
-  text-align: right;
-  font-family:'Montserrat';
+  align-items: start;
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+.details-top{
+  display: flex;
+
+}
+.details-top div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-left: 2rem;
+}
+.details--bottom{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width:55%;
+  color: rgb(169, 164, 164);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
 .movie-title{
-  font-size: 20px;
-  text-transform: uppercase;
-
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  
 }
 
 .movie-average{
   width: max-content;
-  margin-left: auto;
   padding: 1rem;
+  min-width: 30px;
   font-size: 20px;
-  color: black;
-  background-color: rgb(240, 93, 93);
+  background-color: #3774B1;
   border-radius: 10px;
+  font-weight: 800;
+  color: white;
 }
 
 .movie-sinopsis{
