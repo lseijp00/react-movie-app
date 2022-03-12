@@ -14,15 +14,13 @@
   max-width: 250px;
 }
 .Pelicula.Poster{
- min-height: 250px;
+  min-height: 250px;
   max-width: 550px;
 }
 
 .Pelicula.PeliculaDetailed {
   min-height: 280px;
   max-width: 180px;
-  position: relative;
-  box-shadow: 1px 1px .5rem 2px rgba(255, 255, 255, 0.306);
   pointer-events: none;
 }
 
@@ -49,7 +47,6 @@
 
 .Pelicula:hover img {
   filter: brightness(60%);
-
 }
 
 .Pelicula:hover::after {

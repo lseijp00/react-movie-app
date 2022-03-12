@@ -29,11 +29,18 @@
   display: flex;
 
 }
-.details-top div:nth-child(2){
+.details-top > picture{
+  display: flex;
+
+  min-width: 200px;
+  min-height: 300px;
+}
+.details-top > div{
   display: flex;
   flex-direction: column;
   margin-top: auto;
   margin-left: 2rem;
+  text-align: left;
 }
 .details--bottom{
   display: flex;

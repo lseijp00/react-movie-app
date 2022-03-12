@@ -1,8 +1,8 @@
-import '../styles/Spinner.css'
+import './Spinner.css'
 
 export const Spinner = () => {
   return (
-    <div class="lds-dual-ring"></div>
+    <div className="lds-dual-ring"></div>
   )
 }
 

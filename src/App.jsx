@@ -1,10 +1,10 @@
 
-import { Header } from './components/Header'
+import { Header } from './components/Header/Header'
 import FiltradoBotones from './components/FiltradoBotones';
-import ListOfMovies from './components/ListOfMovies';
-import {Title} from './components/Title'
+import ListOfMovies from './components/ListOfMovies/ListOfMovies';
+import {Title} from './components/Title/Title'
 
-import './styles/ListOfMovies.css'
+import './components/ListOfMovies/ListOfMovies.css'
 
 import { Route } from 'wouter';
 import Detail from './pages/Detail'

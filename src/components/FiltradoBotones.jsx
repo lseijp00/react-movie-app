@@ -1,5 +1,5 @@
 import { Link, Route } from 'wouter';
-import '../styles/ListOfMovies.css'
+import './ListOfMovies/ListOfMovies.css'
 
 
 export default function FiltradoBotones() {

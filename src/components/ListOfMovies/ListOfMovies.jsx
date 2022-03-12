@@ -1,8 +1,9 @@
-import FiltradoBotones from './FiltradoBotones'
+import FiltradoBotones from '../FiltradoBotones'
 import React, { useEffect, useState } from 'react'
-import getPopularMovies from '../services/tmdb'
-import { Movie } from './Movie'
-import { Spinner } from './Spinner'
+import getPopularMovies from '../../services/tmdb'
+import { Movie } from '../Movie/Movie'
+import { Spinner } from '../Spinner/Spinner'
+import './ListOfMovies.css'
 
 export default function ListOfMovies({params}) {
 

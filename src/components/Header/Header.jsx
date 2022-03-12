@@ -1,6 +1,6 @@
-import '../styles/Header.css'
+import './Header.css'
 import { Link } from 'wouter'
-import logo from '../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 
 export const Header = () => {
   return (
