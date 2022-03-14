@@ -10,12 +10,12 @@
   cursor: pointer;
 }
 .Pelicula.Caratula{
-  min-height: 350px;
-  max-width: 250px;
+  min-height: 310px;
+  max-width: 200px;
 }
 .Pelicula.Poster{
-  min-height: 250px;
-  max-width: 550px;
+  min-height: 220px;
+  max-width: 530px;
 }
 
 .Pelicula.PeliculaDetailed {
@@ -36,7 +36,7 @@
   padding: .5rem;
   color: black;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(196, 196, 196);
   transition: all .2s ease-in-out;
 }
 

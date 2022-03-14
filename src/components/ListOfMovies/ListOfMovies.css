@@ -1,53 +1,22 @@
-.ListOfMovies{
-  margin-top: 10rem;
+.ListOfMovies {
+  margin-top: 5rem;
   display: flex;
-
-}
-
-.FilterButtons{
-  display: flex;
-  gap: 2rem;
   flex-direction: column;
-  height: max-content;
-  width: 50%;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
 }
-
 .Peliculas {
   display: grid;
   place-content: center;
-  margin-left: auto;
-  margin-right: 4rem;
   width: 70%;
-  
+
 }
 .Peliculas.Posters {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 4rem;
 }
+
 .Peliculas.Caratula {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 3rem;
-}
-
-.boton{
-  display: inline-block;  
-  padding: 1rem;
-  width: 20%;
-  margin: 0 auto;
-  background-color: none;
-  background: none;
-  border: 1px solid grey;
-  border-radius: 4px;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.boton:hover{
-  background-color: #4CA4F5;
-  color: white;
-  border-color: #4CA4F5;;
 }

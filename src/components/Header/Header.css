@@ -1,6 +1,7 @@
 
 .Header {
   display: flex;
+
   width: 100%;
   background-color: transparent;
   position: relative;
@@ -16,46 +17,5 @@
   align-items: center;
   width: 100%;
   text-transform: uppercase;
-
 }
 
-
-.logoHero{
-  max-width: 120px;
-  padding: .5rem ;
-  padding-left: 3rem;
-
-}
-.nav-item{
-  display: flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.link {
-  text-decoration: none;
-  font-size: 17px;
-  color: white;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.link::after{
-  content: '';
-  position: absolute;
-  transform: scaleX(0);
-  height: 3px;
-  left: 0px;
-  right: 0px;
-  bottom: -5px;
-  transition: all .2s ease;
-
-}
-.link:hover{
-  color: #4CA4F5;
-
-}
-.link:hover::after {
-  background-color: #4CA4F5;
-  transform: scaleX(1);
-}

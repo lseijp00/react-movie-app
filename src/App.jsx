@@ -1,8 +1,9 @@
 
 import { Header } from './components/Header/Header'
-import FiltradoBotones from './components/FiltradoBotones';
+import FiltradoBotones from './components/FiltradoBotones/FiltradoBotones';
 import ListOfMovies from './components/ListOfMovies/ListOfMovies';
-import {Title} from './components/Title/Title'
+
+import HomePage from './pages/HomePage'
 
 import './components/ListOfMovies/ListOfMovies.css'
 
@@ -16,7 +17,7 @@ const App = () => {
         <Header/>
       </section>
       <section>
-        <Route exact path="/" component={Title} />
+        <Route exact path="/" component={HomePage} />
       </section>
       <Route path='/movies' component={FiltradoBotones}/> 
       <Route path="/movies/:keyword" component={ListOfMovies}/>

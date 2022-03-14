@@ -51,7 +51,7 @@ export default function Detail({params}) {
 
         <div className='details--bottom'>
 
-          <h2 className='movie-sinopsis'>{movie.overview}</h2>
+          <p className='movie-sinopsis'>{movie.overview}</p>
         </div>
       </section>
       

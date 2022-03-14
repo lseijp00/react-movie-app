@@ -1,4 +1,4 @@
-import FiltradoBotones from '../FiltradoBotones'
+import FiltradoBotones from '../FiltradoBotones/FiltradoBotones'
 import React, { useEffect, useState } from 'react'
 import getPopularMovies from '../../services/tmdb'
 import { Movie } from '../Movie/Movie'

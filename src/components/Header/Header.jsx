@@ -1,22 +1,17 @@
 import './Header.css'
 import { Link } from 'wouter'
-import logo from '../../assets/logo.svg'
+import NavButton from '../NavButton/NavButton'
+import Logo from '../Logo/Logo'
 
 export const Header = () => {
   return (
     <div className='Header'>
-      <img className='logoHero' src={logo} alt="asdsa" />
-
+      <Logo />
+      
       <nav className='nav-menu'>
-        <li className='nav-item'>
-          <Link to="/" className='link'>Inicio</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to="/movies/posters" className='link'>Populares</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to="/" className='link'>Quiénes somos</Link>
-        </li>
+        <NavButton path='/' title='Inicio'/>
+        <NavButton path='/movies/posters' title='Populares'/>
+        <NavButton path='/' title='Quiénes somos'/>
       </nav>
     </div>
   )
