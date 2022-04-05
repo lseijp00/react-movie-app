@@ -1,11 +1,9 @@
 # React-Movie Application
 
-**Description***
------
 An application to watch the most popular movies at the moment (following the criteria of TMDB).
 
 
-**_LIST OF POPULAR MOVIES_**
+*_LIST OF POPULAR MOVIES_*
 -----
 ![List Of Movies](https://user-images.githubusercontent.com/25980894/161845145-31050f0f-6b36-433b-bb9b-cf39fc649618.png)
 
