@@ -1,4 +1,5 @@
 # React-Movie Application
 
+**List of Popular Movies
 
-https://github.com/lseijp00/App---Movie-API/issues/1#issue-1193694988
+![List Of Movies](https://user-images.githubusercontent.com/25980894/161845145-31050f0f-6b36-433b-bb9b-cf39fc649618.png)
